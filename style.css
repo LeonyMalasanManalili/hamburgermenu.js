@@ -1,0 +1,96 @@
+/* GENERAL */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* navbar */
+#nav1{
+    padding: 16px 40px;
+}
+
+#nav1 ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: bold;
+}
+
+#nav1 ul li{ 
+    list-style: none;
+}
+
+#nav1 ul li a , button{
+    text-decoration: none; 
+    color: #000;
+    padding: 14px 24px;
+}
+
+#nav1 ul button{
+    background-color: #E78D5C;
+    border: none;
+    font-weight: bold;
+}
+
+#nav1 ul button:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+#burgermenu{
+    display: none;
+}
+
+#nav2{
+    display: none;
+}
+
+#xbutton{
+    display: none;
+}
+
+@media screen and (max-width: 768px)
+{
+    #nav1{
+        display: none;
+    }
+
+    #nav2{
+        display: none;
+        justify-content: start;
+        padding: 32px 0 0 16px;
+        width: 100%;
+        background-color: #2B3F58;
+        font-size: 24px;
+    }
+
+    #nav2 ul li{
+        padding-bottom: 100px;
+        list-style: none;
+    }
+
+    #nav2 ul li a{
+        color: #fff;
+    }
+
+    #burgermenu{
+        display: block;
+        text-align: end;
+        padding: 16px;
+        color: #D3D3D3;
+    }
+
+    #xbutton{
+        background-color: #2B3F58;
+        text-align: end;
+        padding: 16px;
+        display: none;
+        color: #fff;
+    }
+
+
+}
+
